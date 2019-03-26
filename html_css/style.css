@@ -1,0 +1,11 @@
+body{
+    background:magenta;
+}
+table{
+    border: 5px solid black;
+    background: aqua;
+}
+.mybutton{
+    background: gold;
+    border:solid black;
+}
