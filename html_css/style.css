@@ -1,5 +1,7 @@
 body{
-    background:magenta;
+    
+    background-image: url('download.jpg');
+
 }
 table{
     border: 5px solid black;
