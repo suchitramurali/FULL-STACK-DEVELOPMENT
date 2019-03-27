@@ -7,63 +7,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+    function save(){
+
+        var p=document.getElementById("name").value;
+        console.log(p);
+        var q=document.getElementById("roll").value;
+        console.log(q);
+        var r=document.getElementById("admn").value;
+        console.log(r);
+        var w=document.getElementById("dist").value;
+        console.log(w);
+        var s=document.getElementById("college").value;
+        console.log(s);
+        var t=document.getElementById("user").value;
+        console.log(t);
+        var u=document.getElementById("pass").value;
+        console.log(u);
+        var v=document.getElementById("confirm").value;
+        console.log(v);
+        
+    }
+    </script>
 </head>
 <body>
-        <div class="container">
-                <div class="row">
-                    <div class="col col-12 col-sm-4">
-                    </div>
-                    <div class="col col-12 col-sm-4">
-                         <table class="table">
-                                        <tr>
-                                            <td>NAME</td>
-                                            <td><input type="text"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>ROLL NO.</td>
-                                            <td><input type="text"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Admission no</td>
-                                            <td><input type="text"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>district</td>
-                                            <td>
-                                                <select>
-                                                    <option>thiruvanathapuram</option>
-                                                    <option>ernakulam</option>
-                                                    <option>kozhikode</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>College</td>
-                                            <td><input type="text"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>User name</td>
-                                            <td><input type="text"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Password</td>
-                                            <td><input type="password"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Confirm password</td>
-                                            <td><input type="password"></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><button>REGISTER</button></td>
-                                        </tr>
-                                    </table>   
-         
-                    </div>
-                    <div class="col-12 col-sm-4"></div>
-               
-                </div>
-            </div>
+    <div class="container">
+       <div class="row">
+          <div class="col col-12 col-sm-4"></div>
+          <div class="col col-12 col-sm-4">
+            <form>
+            <table class="table">
+              <tr>
+                <td>NAME</td>
+                <td><input type="text" id="name"></td>
+              </tr>
+              <tr>
+                <td>ROLL NO.</td>
+                <td><input type="text" id="roll"></td>
+              </tr>
+              <tr>
+                <td>Admission no</td>
+                <td><input type="text" id="admn" required></td>
+              </tr>
+              <tr>
+                <td>district</td>
+                <td><select id="dist">
+                     <option>thiruvanathapuram</option>
+                    <option>ernakulam</option>
+                     <option>kozhikode</option>
+                    </select> </td>
+              </tr>
+              <tr>
+                <td>College</td>
+                <td><input type="text" id="college"></td>
+              </tr>
+               <tr>
+                <td>User name</td>
+                <td><input type="text" id="user"></td>
+              </tr>
+              <tr>
+                <td>Password</td>
+                <td><input type="password" id="pass"></td>
+              </tr>
+              <tr>
+                <td>Confirm password</td>
+                <td><input type="password" id="confirm"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><button type="submit" class="mybutton"  onclick="save();" >REGISTER</button></td>
+              </tr>
+           </table>   
+        </form>
+         </div>
+        <div class="col-12 col-sm-4"></div>
+       </div>
+      </div>
                
              
 </body>
