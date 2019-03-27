@@ -1,11 +1,11 @@
 body{
     
-    background-image: url('download.jpg');
+    background-color:cornflowerblue;
 
 }
 table{
     border: 5px solid black;
-    background: aqua;
+    background:pink;
 }
 .mybutton{
     background: gold;
