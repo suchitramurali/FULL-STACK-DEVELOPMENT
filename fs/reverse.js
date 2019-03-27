@@ -1,6 +1,14 @@
 var num=2256;
-var rev=0;
-var rem=0;
+
+
+var no=reverse(num);
+console.log(no);
+
+
+function reverse(rev)
+{
+    var rev=0;
+    var rem=0;
 
 while(num>0)
 {
@@ -8,6 +16,6 @@ while(num>0)
     rev=rev*10+rem;
     num=parseInt(num/10);
 }
-console.log(rev);
 
-
+return rev;
+}
