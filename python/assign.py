@@ -1,0 +1,4 @@
+w=r=t=u=d=100
+print (w,r,t,u,d)
+name,age,place="aju",20,"cochi"
+print(name,age,place)
