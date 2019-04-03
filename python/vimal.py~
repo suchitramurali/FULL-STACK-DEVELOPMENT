@@ -1,0 +1,3 @@
+s="vimal jyothi college"
+m=s[0:12]+"engineering"+ s[13:]
+print m
