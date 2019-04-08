@@ -1,5 +1,5 @@
 const mymodule=require('./custommodule')
-var x=7;
+var x=710;
 var y=7;
 var z=mymodule.adnum(x,y)
 console.log(z);
