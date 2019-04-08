@@ -1,0 +1,6 @@
+def sum(a,b):
+	x=a+b
+	return x
+a=input("enter a no")
+b=input("enter another no")
+print sum(a,b)
