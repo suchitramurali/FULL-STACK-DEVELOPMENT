@@ -9,8 +9,14 @@
   "author": "suchitra",
   "license": "BSD-2-Clause",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.16.4",
     "handlebars": "^4.1.1",
     "lodash": "^4.17.11"
+=======
+    "lodash": "~4.17.11",
+    "express": "~4.16.4",
+    "express-handlebars": "~3.0.2"
+>>>>>>> 628a2df298a2a125d7c500aad21f25e074d1a962
   }
 }
