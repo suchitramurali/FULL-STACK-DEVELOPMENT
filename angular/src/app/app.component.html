@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <h2>{{name}}...</h2>
+  <h3>
+  <input type="text" id="name" [(ngModel)]="name">
+  </h3>
+
+  <div class="CONTAINER">
+    <table class="table table-stripped">
+      <thead>
+      <tr>
+       <th> id</th>
+       <th> name</th>
+       <th> age</th>
+       <th> address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let students of student">
+        <td>{{students.id}}</td>
+        <td>{{students.name}}</td>
+        <td>{{students.age}}</td>
+        <td>{{students.address}}</td>
+
+      </tr>
+    </tbody>
+    </table>
+  </div>
+
+ 
+
+<router-outlet></router-outlet>
