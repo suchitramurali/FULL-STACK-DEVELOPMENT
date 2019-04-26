@@ -3,42 +3,47 @@
 <div class="container col col-md-2">
     <div class="row col col-md-4">
   
-  <form action="/action_page.php">
+  <form (ngSubmit)="AddProduct()">
 
     <div class="form-group">
       <label for="productId" class="mr-sm-2">ProductId:</label>
-     <input type="number" class="form-control mb-2 mr-sm-2" id="id">
+     <input type="number" class="form-control mb-2 mr-sm-2" name="id" [(ngModel)]="productItem.productId">
     </div> 
 
     <div class="form-group">
     <label for="productName" class="mr-sm-2">ProductName:</label>
-      <td><input type="text" class="form-control mb-2 mr-sm-2" id="name">
+      <td><input type="text" class="form-control mb-2 mr-sm-2" name="name" [(ngModel)]="productItem.productName">
       </div>
   
      <div class="form-group">  
     <label for="productCode" class="mr-sm-2">ProductCode:</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="code">
+      <input type="text" class="form-control mb-2 mr-sm-2" name="code" [(ngModel)]="productItem.productCode">
     </div>
 
     <div class="form-group">
       <label for="releaseDate" class="mr-sm-2">ReleaseDate:</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="date">
+      <input type="text" class="form-control mb-2 mr-sm-2" name="date" [(ngModel)]="productItem.releaseDate">
     </div>
 
     <div class="form-group">
       <label for="description" class="mr-sm-2">Description:</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="descr">
+      <input type="text" class="form-control mb-2 mr-sm-2" name="descr" [(ngModel)]="productItem.description">
     </div>
 
     <div class="form-group">
       <label for="starRating" class="mr-sm-2">StarRating:</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="rate">
+      <input type="text" class="form-control mb-2 mr-sm-2" name="rate" [(ngModel)]="productItem.starRating">
     </div>
 
     <div class="form-group">
       <label for="price" class="mr-sm-2">Price:</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="pric">
+      <input type="text" class="form-control mb-2 mr-sm-2" name="pric" [(ngModel)]="productItem.price">
     </div>
+    <div class="form-group">
+      <label for="image" class="mr-sm-2">Image:</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" name="img" [(ngModel)]="productItem.imageUr1">
+    </div>
+      
       
     <div class="form-group">
       <button type="submit" class="mr-sm-2" class="btn btn-primary">Submit</button>

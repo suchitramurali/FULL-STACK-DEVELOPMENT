@@ -7,7 +7,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
 
 import { AddproductComponent } from './components/addproduct/addproduct.component';
 import { MenuComponent } from './components/menu/menu.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,9 @@ import { MenuComponent } from './components/menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
